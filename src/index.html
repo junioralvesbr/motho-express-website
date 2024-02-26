@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="canonical" href="https://www.mothoexpress.com.br" />
+  <meta name="robots" content="all" />
+  <meta name="robots" content="index, follow" />
+
+  <meta name="description" content="Site da Motho Express, uma empresa que oferece soluções e serviços de entrega" />
+
+  <meta name="keywords"
+    content="entregador, entregadores, delivery, mothoExpress, motho express, tecnologia de entrega" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./images/favicon/site.webmanifest" />
+  <meta name="theme-color" content="#000000">
+  </meta>
+
+  <link rel="stylesheet" href="./styles.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <title>HOME | Motho Express</title>
+
+</head>
+
+<body>
+  <!-- MODAL -->
+  <div id="popup-modal" tabindex="-1" data-modal="modal"
+    class="fixed top-0 left-0 right-0 z-50 p-4 backdrop-blur-lg flex justify-center items-center overflow-x-hidden overflow-y-auto md:inset-0 h-screen max-h-full">
+    <div class="relative w-full max-w-md max-h-full">
+      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        <button type="button"
+          class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+          data-modal-hide="popup-modal" onclick="modalHidden()">
+          <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="sr-only">Close modal</span>
+        </button>
+        <div class="p-6 text-center">
+
+          <p class="text-xl text-primary dark:text-white">Mau chegou e já vai</p>
+          <p class="mb-5 text-3xl font-bold text-primary dark:text-white">
+            Ganhar Presente!
+          </p>
+
+          <p class="text-xl text-primary font-light mt-5 dark:text-white">
+            Fale com um de nossos representantes e ganhe
+            <br><span class="text-3xl font-bold dark:text-white">10Km grátis</span><br>
+            para experimentar os nossos serviços!
+          </p>
+
+          <p class="text-secondary mt-2">consulte condições!</p>
+
+          <a href="https://api.whatsapp.com/send?phone=5544984590330&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20cr%C3%A9ditos%20em%20quil%C3%B4metros"
+            target="_blank" rel="noopener noreferrer"
+            class="font-Roboto text-white font-medium bg-third py-3 px-12 rounded-full inline-block border-2 border-third transition-all mt-10 hover:bg-transparent md:hover:text-third"
+            onclick="modalHidden()">
+            Quero Saber mais!
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL -->
+
+  <!-- NAVBAR -->
+  <nav class="absolute z-40 top-0 bg-whiteAlfa w-full">
+    <div class="max-w-[1600px] flex flex-wrap items-center justify-between mx-auto px-4 py-5">
+      <a href="#header" class="flex items-center">
+        <img src="./images/motho-logo.png" class="h-8" alt="MothoExpress Logo" loading="lazy" />
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+
+      <div class="hidden w-full lg:flex lg:flex-row lg:justify-center lg:items-center lg:w-auto" id="navbar-default">
+        <ul class="lg:flex lg:flex-row lg:gap-6 lg:mr-6 lg:h-8">
+          <li class="text-center">
+            <a href="https://drive.google.com/drive/folders/1Vmf3q8659ICijztapYamDPTd07_G-8LH" target="_blank"
+              rel="noopener noreferrer"
+              class="font-Roboto text-third text-lg font-medium transition-all hover:text-zinc-800" aria-current="page">
+              Termos de Uso
+            </a>
+          </li>
+
+          <li class="flex justify-center items-center">
+            <a href="https://mothoexpress.com.br/login/" target="_blank" rel="noopener noreferrer"
+              class="font-Roboto text-white font-medium bg-third border-third border-2 rounded-full px-16 py-2 transition-all hover:bg-transparent hover:text-third"
+              aria-current="page">
+              Portal do lojista
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- NAVBAR -->
+
+  <!-- HERO -->
+  <header>
+    <div class="bg-cover bg-no-repeat bg-[90%] lg:bg-center" style="background-image: url(./images/hero.webp);"
+      id="header">
+
+      <div class="h-[90vh] relative backdrop-brightness-50 lg:backdrop-filter-none xl:px-48">
+
+        <div class=" max-w-lg z-20 absolute bottom-[20%] px-4">
+          <h1 class="font-Rubik text-2xl text-white md:text-3xl lg:text-primary xl:text-4xl">
+            Conectamos você com os melhores entregadores de
+            <strong class="font-bold uppercase">carro</strong>
+            ou
+            <strong class="font-bold uppercase">moto</strong>
+            da sua cidade!
+          </h1>
+
+          <p class="font-Roboto text-white mt-8 md:mt-5 md:text-xl lg:text-secondary">
+            Entre em contato conosco agora mesmo e ganhe 10km totalmente grátis para
+            experimentar os nossos serviços na sua empresa. Consulte condições.
+          </p>
+
+          <a href="https://api.whatsapp.com/send?phone=5544984590330&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20cr%C3%A9ditos%20em%20quil%C3%B4metros"
+            target="_blank" rel="noopener noreferrer"
+            class="font-Roboto text-white font-medium bg-third py-3 px-6 rounded-full inline-block border-2 border-third transition-all hover:bg-transparent mt-5 md:mt-28 md:hover:text-third">
+            Experimente Grátis
+          </a>
+        </div>
+
+        <p class="font-Rubik text-white text-xs absolute px-4 bottom-4 z-30 lg:text-secondary">
+          <span class="text-third uppercase">Atenção:</span>
+          Não transportamos FAST FOOD. Somente entregas programadas.
+        </p>
+      </div>
+    </div>
+  </header>
+  <!-- HERO -->
+
+  <main>
+    <!-- SEÇÃO PARCEIROS -->
+    <section class="swiper-container swiper-container-free-mode overflow-hidden">
+      <div class="swiper-wrapper items-center lg:py-8">
+        <div class="swiper-slide">
+          <img src="./images/parceiros/canahwine.png" class="m-auto h-[60px]" alt="Icone do canah wine"
+            loading="lazy" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/parceiros/cocamar.png" class="m-auto h-[36px] lg:h-[50px]" alt="Icone do cocamar"
+            loading="lazy" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/parceiros/luvi.png" class="m-auto h-[36px] lg:h-[70px]" alt="Icone do luvi"
+            loading="lazy" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/parceiros/confeitemos.png" class="m-auto h-[36px] lg:h-[70px]" alt="Icone do confeitemos"
+            loading="lazy" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/parceiros/ladylinda.png" class="m-auto h-[36px] lg:h-[70px]" alt="Icone do lady linda"
+            loading="lazy" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/parceiros/drogamais.png" class="m-auto h-[36px] lg:h-[70px]" alt="Icone do drogamaais"
+            loading="lazy" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/parceiros/mix.svg" class="m-auto h-[60px]" alt="icone do mix" loading="lazy" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/parceiros/laluna.png" class="m-auto h-[36px] lg:h-[70px]" alt="Icone do laluna"
+            loading="lazy" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/parceiros/superga.png" class="m-auto h-[36px] lg:h-[50px]" alt="Icone do superga"
+            loading="lazy" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/parceiros/acim.webp" class="m-auto h-[66px] lg:h-[100px]" alt="Icone da Acim"
+            loading="lazy" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/parceiros/labinga.png" class="m-auto h-[36px] lg:h-[70px]" alt="Icone do labinga"
+            loading="lazy" />
+        </div>
+      </div>
+    </section>
+    <!-- SEÇÃO PARCEIROS -->
+
+    <!-- SEÇÃO SERVIÇOS -->
+    <section class=" min-h-[90vh] bg-third md:bg-image-servicos py-20 md:bg-no-repeat md:bg-cover md:bg-[60%]
+            md:gap-28">
+      <h2 class="font-Rubik text-white text-center text-xl px-4 max-w-[600px] m-auto md:text-2xl xl:text-4xl">
+        Qual dessas soluções é a melhor para o seu negócio?
+      </h2>
+
+      <div class="mt-14 flex flex-wrap justify-center gap-12 md:mt-32">
+
+        <article class="bg-white rounded-lg py-4 px-6 flex flex-col justify-between gap-5 w-72">
+          <i class="ph ph-device-mobile text-3xl text-primary"></i>
+          <h3 class="text-primary text-xl">App para entregas emergenciais</h3>
+          <p class="text-secondary text-base">
+            Esqueceu sua agenda em casa? Nós buscamos e te entregamos rapidinho!
+          </p>
+          <a href="https://play.google.com/store/apps/details?id=mothoexpress.sisweb.app" target="_blank"
+            rel="noopener noreferrer"
+            class="font-Roboto text-white text-center font-medium bg-third py-3 px-6 mt-6 rounded-full border-2 border-third transition-all hover:bg-transparent hover:text-third">
+            Baixe o app agora
+          </a>
+        </article>
+
+        <article class="bg-white rounded py-4 px-6 flex flex-col justify-between gap-5 w-72">
+          <i class="ph ph-currency-circle-dollar text-3xl text-primary"></i>
+          <h3 class="text-primary text-xl">Créditos em quilômetros</h3>
+          <p class="text-secondary text-base">
+            Compre quilômetros e utilize conforme a demanda de entrega do seu negócio.
+          </p>
+          <a href="https://api.whatsapp.com/send?phone=5544984590330&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20cr%C3%A9ditos%20em%20quil%C3%B4metros"
+            target="_blank" rel="noopener noreferrer"
+            class="font-Roboto text-white text-center font-medium bg-third py-3 px-6 mt-6 rounded-full border-2 border-third transition-all hover:bg-transparent hover:text-third">
+            Experimente grátis
+          </a>
+        </article>
+
+        <article class="bg-white rounded py-4 px-6 flex flex-col justify-between gap-5 w-72">
+          <i class="ph ph-shopping-cart text-3xl text-primary"></i>
+          <h3 class="text-primary text-xl">Para e-commerces e marketplaces</h3>
+          <p class="text-secondary text-base">
+            Instale nossa API no seu sistema e tenha um serviço logístico eficiente para o seu negócio local.
+          </p>
+          <a href="https://api.whatsapp.com/send?phone=5544984590330&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20integra%C3%A7%C3%A3o%20com%20e-commerce%20e%20marktplace"
+            target="_blank" rel="noopener noreferrer"
+            class="font-Roboto text-white text-center font-medium bg-third py-3 px-6 mt-6 rounded-full border-2 border-third transition-all hover:bg-transparent hover:text-third">
+            Fale conosco
+          </a>
+        </article>
+
+        <article class="bg-white rounded py-4 px-6 flex flex-col justify-between gap-5 w-72">
+          <i class="ph ph-truck text-3xl text-primary"></i>
+          <h3 class="text-primary text-xl">Aperfeiçoamento logistico</h3>
+          <p class="text-secondary text-base">
+            Para empresas que possuem entregas e entregadores, um sistema que te traz economia de combustível, tempo
+            e melhora a distribuição da sua empresa!
+          </p>
+          <a href="https://api.whatsapp.com/send?phone=5544984590330&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20aperfei%C3%A7oamento%20log%C3%ADstico"
+            target="_blank" rel="noopener noreferrer"
+            class="font-Roboto text-white text-center font-medium bg-third py-3 px-6 mt-6 rounded-full border-2 border-third transition-all hover:bg-transparent hover:text-third">
+            Experimente grátis
+          </a>
+        </article>
+      </div>
+    </section>
+    <!-- SEÇÃO SERVIÇOS -->
+
+    <!-- SEÇÃO MOBILE -->
+    <section class="flex flex-wrap justify-evenly items-center gap-6 py-12 lg:flex-nowrap">
+
+      <img src="./images/mobile.webp" height="1024px" class="max-h-[668px]"
+        alt="Foto do aplicativo mobile da mothoExpress" loading="lazy" />
+
+      <div class="p-6 flex-2">
+        <h2 class="font-Rubik text-primary text-xl lg:text-1xl md:max-w-[650px] xl:text-4xl xl:max-w-[850px]">
+          Isso vai facilitar a sua vida!
+        </h2>
+        <p class="text-secondary text-base max-w-[430px] mt-4 lg:text-lg">
+          Utilize o nosso APP a seu favor, afinal... porque gastar tempo se nós podemos entregar para você!
+        </p>
+        <a href="https://play.google.com/store/apps/details?id=mothoexpress.sisweb.app" target="_blank"
+          rel="noopener noreferrer" class="inline-block mt-12 w-32 lg:w-full lg:mt-24">
+          <img src="./images/googlePlay.jpg" alt="Icone da google play" loading="lazy" />
+        </a>
+      </div>
+    </section>
+    <!-- SEÇÃO MOBILE -->
+
+    <!-- SEÇÃO DESKTOP -->
+    <section
+      class="flex flex-wrap justify-evenly items-center gap-6 bg-zinc-200 px-4 py-12 sm:flex-nowrap sm:flex-row-reverse">
+
+      <img src="./images/desktop.webp" width="1024px" height="600px" class="sm:w-1/2 lg:w-none"
+        alt="Imagem do desktop do sistema da mothoexpress" loading="lazy" />
+
+      <div class="p-6 flex-2">
+        <h2 class="font-Rubik text-primary text-xl lg:text-1xl md:max-w-[650px] xl:text-4xl xl:max-w-[850px]">
+          Portal do cliente
+        </h2>
+
+        <p class="text-secondary text-base max-w-[430px] mt-4 lg:text-lg">
+          Ao comprar quilômetros, o sistema automaticamente libera esse portal para facilitar os seus pedidos de
+          entregas.
+        </p>
+
+        <a href="https://mothoexpress.com.br/login/ target=" _blank" rel="noopener noreferrer""
+          class=" font-Roboto text-white font-medium bg-third py-3 px-6 rounded-full inline-block mt-5 md:mt-28
+          border-2 border-third transition-all hover:bg-transparent hover:text-third">
+          Experimente Grátis
+        </a>
+      </div>
+    </section>
+    <!-- SEÇÃO DESKTOP -->
+
+    <!-- SEÇÃO COMO FUNCIONA -->
+    <section
+      class="flex flex-col justify-center items-center py-12 gap-12 bg-third md:bg-image-howTo md:min-h-[90vh] md:bg-no-repeat md:bg-cover md:gap-28">
+      <h2 class="font-Rubik text-white text-center text-xl md:text-2xl md:max-w-[650px] xl:text-4xl xl:max-w-[850px]">
+        Veja como é simples e fácil
+      </h2>
+
+      <div class="flex flex-wrap justify-center gap-12">
+
+        <article class="bg-white rounded-lg p-6 flex flex-col gap-5 w-72 h-72 lg:w-64">
+          <i class="ph ph-devices text-5xl text-third"></i>
+          <h3 class="text-primary text-xl">
+            Você solicita a <br> coleta
+          </h3>
+          <p class="text-secondary">
+            Faça a solicitação da coleta via APP ou pela WEB.
+          </p>
+        </article>
+
+        <article class="bg-white rounded-lg p-6 flex flex-col gap-5 w-72 h-72 lg:w-64">
+          <i class="ph ph-truck text-5xl text-third"></i>
+          <h3 class="text-primary text-xl">
+            Condutor aceita o pedido
+          </h3>
+          <p class="text-secondary text-base">
+            O sistema conecta com o condutor mais próximo da coleta.
+          </p>
+        </article>
+
+        <article class="bg-white rounded-lg p-6 flex flex-col gap-5 w-72 h-72 lg:w-64">
+          <i class="ph ph-map-trifold text-5xl text-third"></i>
+          <h3 class="text-primary text-xl">
+            Roterização inteligente
+          </h3>
+          <p class="text-secondary text-base">
+            O sistema calcula a rota mais barata para o cliente e a mais rápida para o condutor.
+          </p>
+        </article>
+
+        <article class="bg-white rounded-lg p-6 flex flex-col gap-5 w-72 h-72 lg:w-64">
+          <i class="ph ph-users text-5xl text-third"></i>
+          <h3 class="text-primary text-xl">
+            Acompanhamento do cliente
+          </h3>
+          <p class="text-secondary text-base">
+            O cliente recebe um link para acompanhamento em tempo real da entrega.
+          </p>
+        </article>
+
+        <article class="bg-white rounded-lg p-6 flex flex-col gap-5 w-72 h-72 lg:w-64">
+          <i class="ph ph-camera text-5xl text-third"></i>
+          <h3 class="text-primary text-xl">
+            Comprovante de entrega
+          </h3>
+          <p class="text-secondary text-base">
+            O sistema envia o relatório de todo o processo da entrega para o e-mail de quem solicitou o serviço.
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- SEÇÃO COMO FUNCIONA -->
+
+    <!-- BLOCO DO ENTREGADOR -->
+    <section class="bg-no-repeat bg-cover p-6 md:min-h-[90vh] md:p-40"
+      style="background-image: url(./images/entregador.webp)">
+
+      <article class="bg-zinc-100 rounded-lg drop-shadow-2xl p-6 max-w-md">
+        <h3 class="text-third text-xl md:text-4xl">
+          Ganhe dinheiro como entregador!
+        </h3>
+
+        <p class="text-primary mt-4 md:text-lg">
+          Trabalhe no seu tempo, defina o melhor horário para fazer as entregas. Gerencie tudo na palma da sua mão.
+        </p>
+
+        <p class="text-primary mt-4 md:text-lg">
+          Clique no botão abaixo e faça o seu cadastro para ser um de nossos condutores!
+          <a href="https://drive.google.com/drive/folders/1Vmf3q8659ICijztapYamDPTd07_G-8LH" target="_blank"
+            rel="noopener noreferrer" class="underline">
+            Leia os termos de uso
+          </a>
+        </p>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfOUXZbsYFWrqVDFqxabF6_atKPLGouvKnxJh4INo0uizUGaA/viewform"
+          target="_blank" rel="noopener noreferrer"
+          class="font-Roboto text-white text-center font-medium bg-third py-3 px-6 rounded-full inline-block mt-12 lg:mt-24 border-2 border-third transition-all hover:bg-transparent hover:text-third">
+          Faça o seu cadastro
+        </a>
+      </article>
+    </section>
+    <!-- BLOCO DO ENTREGADOR -->
+
+    <!-- BLOCO DE TESTEMUNHAS -->
+    <section class="bg-white py-6 sm:py-8 lg:py-12">
+      <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+        <h2 class="font-Rubik mb-8 text-center text-2xl font-bold text-third md:mb-12 lg:text-3xl">
+          O que os clientes falam de nós !
+        </h2>
+
+        <div class="grid gap-y-10 sm:grid-cols-2 sm:gap-y-12 lg:grid-cols-3 lg:divide-x">
+          <!-- quote - start -->
+          <article class="flex flex-col items-center justify-between gap-4 sm:px-4 md:gap-6 lg:px-8">
+            <div class="text-center text-gray-600 font-Roboto">
+              “O Motho Express facilitou muito as minhas vendas. Antes eu precisava me dividir em mil para conseguir dar
+              conta das entregas. Hoje com vocês eu consigo focar em outras coisas e ganho tempo para poder me dedicar a
+              novas vendas."
+            </div>
+
+            <div class="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
+              <div class="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
+                <img src="./images/clientes/isabela.jpeg" loading="lazy" alt="Foto da isabela CEO da Luvi Boutique"
+                  class="h-full w-full object-cover object-center" />
+              </div>
+
+              <div>
+                <div class="text-center text-sm font-bold text-third sm:text-left md:text-base">
+                  Isabela
+                </div>
+                <p class="font-Rubik text-center text-sm text-gray-500 sm:text-left md:text-sm">
+                  CEO / LUVI BOUTIQUE
+                </p>
+              </div>
+            </div>
+          </article>
+          <!-- quote - end -->
+
+          <!-- quote - start -->
+          <article class="flex flex-col items-center justify-between gap-4 sm:px-4 md:gap-6 lg:px-8">
+            <div class="text-center text-gray-600">
+              “As entregas da Motho Express são rápidas, seguras e muito personalizada. Em todo esse tempo de parceria
+              não tivemos nenhum ocorrido, por mais que os nossos produtos sejam altamente frágeis! Super indico,
+              realmente de fato prestam um excelente trabalho.”
+            </div>
+
+            <div class="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
+              <div class="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
+                <img src="./images/clientes/mauro.jpeg" loading="lazy" alt="Foto do Mauro CEO da Canah Wine"
+                  class="h-full w-full object-cover object-center" />
+              </div>
+
+              <div>
+                <div class="text-center text-sm font-bold text-third sm:text-left md:text-base">Mauro</div>
+                <p class="text-center text-sm text-gray-500 sm:text-left md:text-sm">CEO / CANAH WINE</p>
+              </div>
+            </div>
+          </article>
+          <!-- quote - end -->
+
+          <!-- quote - start -->
+          <article class="flex flex-col items-center justify-between gap-4 sm:px-4 md:gap-6 lg:px-8">
+            <div class="text-center text-gray-600">
+              “Com o auxílio do MothoExpress nosso processo de entrega tornou-se mais rápido e eficaz, o suporte está
+              sempre disponível e agem com proatividade na resolução de problemas. Os preços são seguidos e os custos de
+              entrega são bons e acessíveis. A entrega ágil garante a satisfação do cliente final, o que é primordial
+              para a Cooperativa.”
+            </div>
+
+            <div class="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
+              <div class="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
+                <img src="./images/clientes/ecommerce-cocamar.jpeg" loading="lazy" alt="Photo by Ayo Ogunseinde"
+                  class="h-full w-full object-cover object-center" />
+              </div>
+
+              <div>
+                <div class="text-center text-sm font-bold text-third sm:text-left md:text-base">
+                  Alexandre Oliveira Junior
+                </div>
+                <p class="text-center text-sm text-gray-500 sm:text-left md:text-sm">E-commerce / Cocamar</p>
+              </div>
+            </div>
+          </article>
+          <!-- quote - end -->
+        </div>
+      </div>
+    </section>
+    <!-- BLOCO DE TESTEMUNHAS -->
+
+    <!-- PROGRAMAS DE ACELERAÇÃO E DESENVOLVIMENTO -->
+    <section class="py-12 mt-12">
+      <h3 class="font-Rubik text-third text-center text-2xl max-w-[550px] m-auto lg:text-3xl">
+        Aceleração e Desenvolvimento
+      </h3>
+      <div class="flex flex-wrap justify-evenly items-center mt-6 lg:mt-12">
+        <img src="./images/programas/evoa.jpeg" class="h-28" alt="Icone do programa evoa" loading="lazy" />
+        <img src="./images/programas/inovativa.png" class="h-28" alt="Icone do programa inovativa" loading="lazy" />
+        <img src="./images/programas/sebrae.jpeg" class="h-28" alt="Icone do programa sebrae" loading="lazy" />
+        <img src="./images/programas/nz3.png" class="h-28" alt="Icone do programa sebrae" loading="lazy" />
+      </div>
+    </section>
+    <!-- PROGRAMAS DE ACELERAÇÃO E DESENVOLVIMENTO -->
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="flex flex-col gap-8 justify-evenly items-center bg-zinc-200 px-6 py-12 md:flex-row md:items-start">
+    <div class="max-w-sm text-center md:text-start">
+      <a href="#header">
+        <img src="./images/motho-logo.png" class="m-auto md:m-0" alt="Logo da Motho Express" loading="lazy" />
+      </a>
+      <p class="text-primary mt-4">
+        Nosso objetivo é garantir a melhor experiência para o seu cliente! Aqui, o melhor jeito é o seu...
+      </p>
+      <div class="mt-4">
+        <a href="https://api.whatsapp.com/send?phone=5544984590330&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20empresa"
+          target="_blank" rel="noopener noreferrer">
+          <i class="ph-fill ph-whatsapp-logo text-3xl text-green-600"></i>
+        </a>
+        <a href="https://www.facebook.com/Mothoexpress/" target="_blank" rel="noopener noreferrer">
+          <i class="ph-fill ph-facebook-logo text-3xl text-blue-600"></i>
+        </a>
+        <a href="https://www.instagram.com/motho.express/" target="_blank" rel="noopener noreferrer">
+          <i class="ph ph-instagram-logo text-3xl text-third"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="text-center md:text-start">
+      <p class="text-primary font-bold">Soluções:</p>
+      <a href="https://play.google.com/store/apps/details?id=mothoexpress.sisweb.app" target="_blank"
+        rel="noopener noreferrer" class="block text-secondary hover:text-primary mt-2">
+        Aplicativo de entregas
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=5544984590330&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20cr%C3%A9ditos%20em%20quil%C3%B4metros"
+        target="_blank" rel="noopener noreferrer" class="block text-secondary hover:text-primary mt-2">
+        Plano MOTHO KM
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=5544984590330&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20integra%C3%A7%C3%A3o%20com%20e-commerce%20e%20marktplace"
+        target="_blank" rel="noopener noreferrer" class="block text-secondary hover:text-primary mt-2">API de
+        Integração</a>
+      <a href="https://api.whatsapp.com/send?phone=5544984590330&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20aperfei%C3%A7oamento%20log%C3%ADstico"
+        target="_blank" rel="noopener noreferrer" class="block text-secondary hover:text-primary mt-2">Aperfeiçoamento
+        Logístico</a>
+    </div>
+
+    <div class="text-center md:text-start">
+      <p class="text-primary font-bold">Endereço:</p>
+      <a href="https://goo.gl/maps/sR2jJsqnz4JzXraV9?coh=178571&entry=tt" target="_blank" rel="noopener noreferrer">
+        <p class="text-secondary mt-2 hover:text-primary">Avenida Pedro Taques, 294</p>
+        <p class="text-secondary hover:text-primary">Maringá - Pr</p>
+      </a>
+    </div>
+
+    <div>
+      <a href="https://mothoexpress.com.br/login/" target="_blank" rel="noopener noreferrer">
+        <img src="./images/webapp.jpg" class="m-auto" alt="image de link para o web app" loading="lazy" />
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=mothoexpress.sisweb.app" target="_blank"
+        rel="noopener noreferrer">
+        <img src="./images/googlePlay.jpg" class="m-auto" alt="Imagem de downloads de mobile" loading="lazy" />
+      </a>
+    </div>
+  </footer>
+  <!-- FOOTER -->
+
+  <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+
+    const swiperOptions = {
+      loop: true,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false
+      },
+      slidesPerView: '6',
+      speed: 5000,
+      spaceBetween: 10,
+      grabCursor: true,
+      mousewheelControl: true,
+      keyboardControl: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          speed: 2000
+        },
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+        640: {
+          slidesPerView: 4,
+          spaceBetween: 40
+        },
+        768: {
+          slidesPerView: 5,
+          spaceBetween: 40,
+          speed: 4000
+        },
+      }
+    };
+    const swiper = new Swiper(".swiper-container", swiperOptions);
+  </script>
+  <script src="https://unpkg.com/@phosphor-icons/web" defer async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js" defer async></script>
+  <script src="./modal.js" defer></script>
+</body>
+
+</html>

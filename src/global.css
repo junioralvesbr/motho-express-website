@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  overflow-wrap: break-word;
+  letter-spacing: -0.047rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Rubik', sans-serif;
+}
+
+.swiper-container {
+  padding: 20px 0;
+}
+
+.swiper-container-free-mode>.swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.swiper-slide {
+  overflow: hidden;
+  background-position: center center;
+}
