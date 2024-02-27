@@ -716,7 +716,14 @@
 
   <script src="https://unpkg.com/@phosphor-icons/web" defer async></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js" defer async></script>
-  <script src="./modal.js" defer></script>
+
+  <script defer>
+    const $modal = document.querySelector("#popup-modal")
+
+    function modalHidden() {
+      $modal.classList.add('hidden')
+    }
+  </script>
 </body>
 
 </html>
