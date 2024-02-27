@@ -26,15 +26,6 @@ h4 {
   font-family: 'Rubik', sans-serif;
 }
 
-.swiper-container {
-  padding: 20px 0;
-}
-
 .swiper-container-free-mode>.swiper-wrapper {
   transition-timing-function: linear;
-}
-
-.swiper-slide {
-  overflow: hidden;
-  background-position: center center;
 }
