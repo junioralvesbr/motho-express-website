@@ -13,13 +13,12 @@
   npm install
 ```
 
-#### Para atualizar o tailwind utilize:
+#### Para ATUALIZAR o tailwind utilize:
 ```node
   npm install tailwindcss@latest
 ```
 
-#### Para utilizar o tailwind em desenvolvimento utilize:
-Utilize a branch develop:
+#### Para utilizar o tailwind em desenvolvimento:
 
 ```git
   git checkout develop
@@ -29,14 +28,10 @@ Utilize a branch develop:
   npx tailwindcss -i './src/global.css' -o './src/styles.css --watch
 ```
 
-#### Para gerar o build final do tailwind no styles.css utilize:
-Utilize a branch deploy
-
-```git
-  git checkout deploy
-  git merge develop
-```
+#### Para gerar a build final do tailwind no styles.css utilize:
 
 ```node
   npx tailwindcss -i './src/global.css' -o './src/styles.css --minify
 ```
+
+``` Após gerar a build final faça o merge na branch "main" ```

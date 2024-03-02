@@ -27,7 +27,7 @@
   <meta name="theme-color" content="#000000">
   </meta>
 
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./stylecss.css" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
@@ -81,12 +81,12 @@
 
   <!-- NAVBAR -->
   <nav class="absolute z-40 top-0 bg-whiteAlfa w-full">
-    <div class="max-w-[1600px] flex flex-wrap items-center justify-between mx-auto px-4 py-5">
+    <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto px-4 py-6">
       <a href="#header" class="flex items-center">
         <img src="./images/motho-logo.png" class="h-8" alt="MothoExpress Logo" loading="lazy" />
       </a>
       <button data-collapse-toggle="navbar-default" type="button"
-        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
         aria-controls="navbar-default" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
@@ -97,8 +97,8 @@
         </svg>
       </button>
 
-      <div class="hidden w-full lg:flex lg:flex-row lg:justify-center lg:items-center lg:w-auto" id="navbar-default">
-        <ul class="lg:flex lg:flex-row lg:gap-6 lg:mr-6 lg:h-8">
+      <div class="hidden w-full md:flex md:flex-row md:justify-center md:items-center md:w-auto" id="navbar-default">
+        <ul class="md:flex md:flex-row md:gap-6 md:mr-6 md:h-8">
           <li class="text-center">
             <a href="https://drive.google.com/drive/folders/1Vmf3q8659ICijztapYamDPTd07_G-8LH" target="_blank"
               rel="noopener noreferrer"
@@ -158,55 +158,55 @@
   <!-- HERO -->
 
   <main>
-    <!-- SEÇÃO PARCEIROS -->
-    <section class="swiper-container swiper-container-free-mode overflow-hidden">
+    <!-- SEÇÃO CLIENTES -->
+    <section class="clientes swiper-container swiper-container-free-mode overflow-hidden px-5 py-0">
       <div class="swiper-wrapper items-center lg:py-8">
-        <div class="swiper-slide">
+        <div class="swiper-slide overflow-hidden bg-center">
           <img src="./images/parceiros/canahwine.png" class="m-auto h-[60px]" alt="Icone do canah wine"
             loading="lazy" />
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide overflow-hidden bg-center">
           <img src="./images/parceiros/cocamar.png" class="m-auto h-[36px] lg:h-[50px]" alt="Icone do cocamar"
             loading="lazy" />
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide overflow-hidden bg-center">
           <img src="./images/parceiros/luvi.png" class="m-auto h-[36px] lg:h-[70px]" alt="Icone do luvi"
             loading="lazy" />
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide overflow-hidden bg-center">
           <img src="./images/parceiros/confeitemos.png" class="m-auto h-[36px] lg:h-[70px]" alt="Icone do confeitemos"
             loading="lazy" />
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide overflow-hidden bg-center">
           <img src="./images/parceiros/ladylinda.png" class="m-auto h-[36px] lg:h-[70px]" alt="Icone do lady linda"
             loading="lazy" />
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide overflow-hidden bg-center">
           <img src="./images/parceiros/drogamais.png" class="m-auto h-[36px] lg:h-[70px]" alt="Icone do drogamaais"
             loading="lazy" />
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide overflow-hidden bg-center">
           <img src="./images/parceiros/mix.svg" class="m-auto h-[60px]" alt="icone do mix" loading="lazy" />
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide overflow-hidden bg-center">
           <img src="./images/parceiros/laluna.png" class="m-auto h-[36px] lg:h-[70px]" alt="Icone do laluna"
             loading="lazy" />
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide overflow-hidden bg-center">
           <img src="./images/parceiros/superga.png" class="m-auto h-[36px] lg:h-[50px]" alt="Icone do superga"
             loading="lazy" />
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide overflow-hidden bg-center">
           <img src="./images/parceiros/acim.webp" class="m-auto h-[66px] lg:h-[100px]" alt="Icone da Acim"
             loading="lazy" />
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide overflow-hidden bg-center">
           <img src="./images/parceiros/labinga.png" class="m-auto h-[36px] lg:h-[70px]" alt="Icone do labinga"
             loading="lazy" />
         </div>
       </div>
     </section>
-    <!-- SEÇÃO PARCEIROS -->
+    <!-- SEÇÃO CLIENTES -->
 
     <!-- SEÇÃO SERVIÇOS -->
     <section class=" min-h-[90vh] bg-third md:bg-image-servicos py-20 md:bg-no-repeat md:bg-cover md:bg-[60%]
@@ -273,7 +273,7 @@
     </section>
     <!-- SEÇÃO SERVIÇOS -->
 
-    <!-- SEÇÃO MOBILE -->
+    <!-- SEÇÃO APLICATIVO MOBILE -->
     <section class="flex flex-wrap justify-evenly items-center gap-6 py-12 lg:flex-nowrap">
 
       <img src="./images/mobile.webp" height="1024px" class="max-h-[668px]"
@@ -292,9 +292,9 @@
         </a>
       </div>
     </section>
-    <!-- SEÇÃO MOBILE -->
+    <!-- SEÇÃO APLICATIVO MOBILE -->
 
-    <!-- SEÇÃO DESKTOP -->
+    <!-- SEÇÃO PORTAL DO CLIENTE -->
     <section
       class="flex flex-wrap justify-evenly items-center gap-6 bg-zinc-200 px-4 py-12 sm:flex-nowrap sm:flex-row-reverse">
 
@@ -318,7 +318,7 @@
         </a>
       </div>
     </section>
-    <!-- SEÇÃO DESKTOP -->
+    <!-- SEÇÃO PORTAL DO CLIENTE -->
 
     <!-- SEÇÃO COMO FUNCIONA -->
     <section
@@ -382,7 +382,73 @@
     </section>
     <!-- SEÇÃO COMO FUNCIONA -->
 
-    <!-- BLOCO DO ENTREGADOR -->
+    <!-- SEÇÃO MIDIAS E NOTICIAS -->
+    <section class="p-6 lg:px-16 lg:py-28">
+      <h2 class="font-Rubik text-primary text-center text-xl px-4 max-w-3xl m-auto md:text-2xl xl:text-4xl">
+        Estamos presentes em várias mídias
+      </h2>
+
+      <p class="text-secondary text-base text-center max-w-md mx-auto mt-4 lg:text-lg">
+        Somos uma empresa em ampla expansão com reconhecimento nos mais renomados canais de notícias!
+      </p>
+
+      <span class="text-secondary text-base text-center block mt-4 lg:text-lg">
+        <strong class="font-bold text-third">Clique</strong>
+        nos ícones abaixo e <strong class="uppercase text-third">veja</strong>
+        o que os principais portais de noticias falam sobre nós!
+      </span>
+
+      <div class="midias-noticias swiper-container overflow-hidden mt-12 lg:mt-24">
+        <ul class="swiper-wrapper items-center max-w-screen-2xl mx-auto">
+          <li class="swiper-slide overflow-hidden bg-center">
+            <a href=" https://www.cbnmaringa.com.br/noticia/motoboy-cria-startup-de-entregas-e-logistica-e-cresce-mais-de-800"
+              target="_blank" rel="noopener noreferrer" class="max-w-32 block">
+              <img src="./images/noticias/cbn.png" alt="Icone da cbn">
+            </a>
+          </li>
+          <li class="swiper-slide overflow-hidden bg-center">
+            <a href="https://pr.agenciasebrae.com.br/inovacao/motoboy-cria-empresa-e-cresce-mais-de-800-em-faturamento-em-dois-anos/"
+              target="_blank" rel="noopener noreferrer" class="max-w-32 block">
+              <img src="./images/noticias/sebrae.png" alt="Icone da cbn">
+            </a>
+          </li>
+          <li class="swiper-slide overflow-hidden bg-center">
+            <a href="https://g1.globo.com/pr/parana/especial-publicitario/sebrae-parana/juntos-para-empreender/noticia/2023/10/23/motoboy-cria-empresa-e-cresce-mais-de-800percent-em-faturamento-em-dois-anos.ghtml"
+              target="_blank" rel="noopener noreferrer" class="max-w-32 block">
+              <img src="./images/noticias/g1.png" alt="Icone da cbn">
+            </a>
+          </li>
+          <li class="swiper-slide overflow-hidden bg-center">
+            <a href="https://www.poder360.com.br/poder-empreendedor/motoboy-cria-propria-plataforma-de-entregas-e-cresce-800-em-2-anos/#:~:text=A%20partir%20de%20uma%20lacuna,cresceu%20823%25%20em%202%20anos"
+              target="_blank" rel="noopener noreferrer" class="max-w-32 block">
+              <img src="./images/noticias/poder360.png" alt="Icone da cbn">
+            </a>
+          </li>
+          <li class="swiper-slide overflow-hidden bg-center">
+            <a href="https://www.projetodraft.com/um-aplicativo-de-entrega-de-encomendas-com-foco-em-cidades-pequenas-essa-e-a-proposta-do-motho-express/"
+              target="_blank" rel="noopener noreferrer" class="max-w-32 block">
+              <img src="./images/noticias/draft.png" alt="Icone da cbn">
+            </a>
+          </li>
+          <li class="swiper-slide overflow-hidden bg-center">
+            <a href="https://portfolio.com.br/entregas/" target="_blank" rel="noopener noreferrer"
+              class="max-w-32 block">
+              <img src="./images/noticias/portifolio.png" alt="Icone da cbn">
+            </a>
+          </li>
+          <li class="swiper-slide overflow-hidden bg-center">
+            <a href="https://amanha.com.br/categoria/empreendedorismo/motho-express-vence-primeiro-desafio-das-startups-de-maringa"
+              target="_blank" rel="noopener noreferrer" class="max-w-32 block">
+              <img src="./images/noticias/amanha.jpg" alt="Icone da cbn">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- SEÇÃO MIDIAS E NOTICIAS -->
+
+
+    <!-- BLOCO DO ENTREGADOR GANHE DINHEIRO -->
     <section class="bg-no-repeat bg-cover p-6 md:min-h-[90vh] md:p-40"
       style="background-image: url(./images/entregador.webp)">
 
@@ -403,16 +469,16 @@
           </a>
         </p>
 
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfOUXZbsYFWrqVDFqxabF6_atKPLGouvKnxJh4INo0uizUGaA/viewform"
-          target="_blank" rel="noopener noreferrer"
+        <a href="https://docs.google.com/forms/d/1DSM6DdJ6EJ0s_5-ppRQTS44AsAKh_VJUIH3S1lQKDlc/edit" target="_blank"
+          rel="noopener noreferrer"
           class="font-Roboto text-white text-center font-medium bg-third py-3 px-6 rounded-full inline-block mt-12 lg:mt-24 border-2 border-third transition-all hover:bg-transparent hover:text-third">
           Faça o seu cadastro
         </a>
       </article>
     </section>
-    <!-- BLOCO DO ENTREGADOR -->
+    <!-- BLOCO DO ENTREGADOR GANHE DINHEIRO -->
 
-    <!-- BLOCO DE TESTEMUNHAS -->
+    <!-- BLOCO DE TESTEMUNHOS -->
     <section class="bg-white py-6 sm:py-8 lg:py-12">
       <div class="mx-auto max-w-screen-xl px-4 md:px-8">
         <h2 class="font-Rubik mb-8 text-center text-2xl font-bold text-third md:mb-12 lg:text-3xl">
@@ -495,7 +561,7 @@
         </div>
       </div>
     </section>
-    <!-- BLOCO DE TESTEMUNHAS -->
+    <!-- BLOCO DE TESTEMUNHOS -->
 
     <!-- PROGRAMAS DE ACELERAÇÃO E DESENVOLVIMENTO -->
     <section class="py-12 mt-12">
@@ -547,11 +613,17 @@
         Plano MOTHO KM
       </a>
       <a href="https://api.whatsapp.com/send?phone=5544984590330&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20integra%C3%A7%C3%A3o%20com%20e-commerce%20e%20marktplace"
-        target="_blank" rel="noopener noreferrer" class="block text-secondary hover:text-primary mt-2">API de
-        Integração</a>
+        target="_blank" rel="noopener noreferrer" class="block text-secondary hover:text-primary mt-2">
+        API de Integração
+      </a>
       <a href="https://api.whatsapp.com/send?phone=5544984590330&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20aperfei%C3%A7oamento%20log%C3%ADstico"
-        target="_blank" rel="noopener noreferrer" class="block text-secondary hover:text-primary mt-2">Aperfeiçoamento
-        Logístico</a>
+        target="_blank" rel="noopener noreferrer" class="block text-secondary hover:text-primary mt-2">
+        Aperfeiçoamento Logístico
+      </a>
+      <a href="https://docs.google.com/forms/d/1DSM6DdJ6EJ0s_5-ppRQTS44AsAKh_VJUIH3S1lQKDlc/edit" target="_blank"
+        rel="noopener noreferrer" class="block text-secondary hover:text-primary mt-2">
+        Cadastro de MotoBoy
+      </a>
     </div>
 
     <div class="text-center md:text-start">
@@ -574,10 +646,11 @@
   </footer>
   <!-- FOOTER -->
 
+  <!-- SCRIPT PARA CARROCEL DAS SEÇÕES CLIENTES E MIDIAS -->
   <script type="module">
     import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
 
-    const swiperOptions = {
+    const clientsSwiperOptions = {
       loop: true,
       autoplay: {
         delay: 0,
@@ -610,11 +683,56 @@
         },
       }
     };
-    const swiper = new Swiper(".swiper-container", swiperOptions);
+
+    const midiasSwiperOptions = {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      },
+      grabCursor: true,
+      mousewheelControl: true,
+      keyboardControl: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          speed: 1000
+        },
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        650: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 7,
+          spaceBetween: 10,
+        },
+      }
+    };
+
+    const midias = new Swiper(".midias-noticias", midiasSwiperOptions);
+    const clients = new Swiper(".clientes", clientsSwiperOptions);
   </script>
+  <!-- SCRIPT PARA CARROCEL DAS SEÇÕES CLIENTES E MIDIAS -->
+
   <script src="https://unpkg.com/@phosphor-icons/web" defer async></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js" defer async></script>
-  <script src="./modal.js" defer></script>
+
+  <!-- MODAL -->
+  <script defer>
+    const $modal = document.querySelector("#popup-modal")
+
+    function modalHidden() {
+      $modal.classList.add('hidden')
+    }
+  </script>
+  <!-- MODAL -->
+
 </body>
 
 </html>
