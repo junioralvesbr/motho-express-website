@@ -3,7 +3,7 @@
 ```Site criado para startup Motho Express com intuito de apresentar a empresa aos clientes.```
 
 ### Link de acesso
-[mothoexpress.com.br](www.mothoexpress.com.br)
+[www.mothoexpress.com.br](https://www.mothoexpress.com.br/)
 
 # Tailwindcss
  - O arquivo styles.css é gerado com o tailwind
